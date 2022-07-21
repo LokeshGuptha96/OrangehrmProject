@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Suite">
+<parameter name="m" value="8"/>
+<parameter name="n" value="4"/>
+  <test thread-count="1" name="AddTest">
+  <classes>  <class name="paramPackage.Addition"/></classes>
+  
+  </test> <!-- Test -->
+   <test thread-count="1" name="SubTest">
+  <classes> <class name="paramPackage.Subtraction"/> </classes>
+  
+  </test> <!-- Test -->
+   <test thread-count="1" name="MulTest">
+  <classes> <class name="paramPackage.Multiplication"></class></classes>
+  
+  </test> <!-- Test -->
+   <test thread-count="1" name="DivTest">
+  <classes> <class  name="paramPackage.Division"></class></classes>
+  
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

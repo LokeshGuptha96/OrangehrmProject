@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <parameter name="m" value="8"/>
+<parameter name="n" value="4"/>
+  <test thread-count="1" name="AddTest">
+  <classes>  <class name="paramPackage.Addition"/></classes>
+  
+  </test> <!-- Test -->
+   <test thread-count="1" name="SubTest">
+  <classes> <class name="paramPackage.Subtraction"/> </classes>
+  
+  </test> <!-- Test -->
+   <test thread-count="1" name="MulTest">
+  <classes> <class name="paramPackage.Multiplication"></class></classes>
+  
+  </test> <!-- Test -->
+   <test thread-count="1" name="DivTest">
+  <classes> <class  name="paramPackage.Division"></class></classes>
+  
+  </test> <!-- Test -->
+  
+  
+  <test thread-count="1" name="fruitTest">
+  <parameter name="fruit11" value="apple"></parameter>
+   <parameter name="fruit12" value="banana">  </parameter>
+   <parameter name="fruit21" value="orange">  </parameter>
+   <parameter name="fruit22" value="mango">  </parameter>
+  <classes>
+  <class name="fruitsNvegetables.Fruits"></class>
+  </classes>
+    </test> <!-- Test -->
+    
+    <test name="Vegtest">
+    <parameter name="veg11" value="potato"></parameter>
+    <parameter name="veg12" value="onion"></parameter>
+    <parameter name="veg21" value="carrot"></parameter>
+    <parameter name="veg22" value="tomatoes"></parameter>
+    
+    
+    <classes>
+  <class name="fruitsNvegetables.Vegetables"></class>
+  </classes>
+    </test>
+</suite> <!-- Suite -->
